@@ -1,0 +1,10 @@
+﻿<div ng-show="product.Images.length">
+    <div class="img-wrap">
+        <img ng-src="{{gal.path + product.Images[gal.current].ImagePath}}" />
+    </div>
+    <ul class="img-thumbnails clearfix">
+        <li class="small-image pull-left thumbnail" ng-repeat="image in product.Images">
+            <img ng-src="{{gal.path + image.ImagePath}}" ng-click="gal.setCurrent($index)" width="50px" height="50px" />
+        </li>
+    </ul>
+</div>

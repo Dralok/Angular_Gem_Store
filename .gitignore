@@ -234,3 +234,5 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+/install/Angular_Gem_Store_00.00.01_Source.zip
+/install/Angular_Gem_Store_00.00.01_Install.zip

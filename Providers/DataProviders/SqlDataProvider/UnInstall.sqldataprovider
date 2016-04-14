@@ -1,0 +1,16 @@
+﻿
+--BEGIN TRAN
+
+IF EXISTS(SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'dbo.Angular_Gem_Store_Inventory_Reviews') AND type in (N'U'))
+	DROP TABLE dbo.Angular_Gem_Store_Inventory_Reviews
+GO
+
+IF EXISTS(SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'dbo.Angular_Gem_Store_Inventory_Images') AND type in (N'U'))
+	DROP TABLE dbo.Angular_Gem_Store_Inventory_Images
+GO
+
+IF EXISTS(SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'dbo.Angular_Gem_Store_Inventory') AND type in (N'U'))
+	DROP TABLE dbo.Angular_Gem_Store_Inventory
+GO
+
+--COMMIT TRAN
